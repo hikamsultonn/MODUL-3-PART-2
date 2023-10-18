@@ -1,0 +1,13 @@
+<resources>
+    <string name="edit">Edit Profil</string>
+    <string name="foto">Foto Profil</string>
+    <string name="ubah">Ubah Foto</string>
+    <string name="nama">Nama</string>
+    <string name="nim">NIM</string>
+    <string name="email">Email</string>
+    <string name="telefon">No.Telefon</string>
+    <string name="prodi">Program Studi</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="app_name">MOD32</string>
+</resources>

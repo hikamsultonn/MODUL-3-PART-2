@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="185dp"
+        android:layout_height="143dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-28dp"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@drawable/gambar1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="179dp"
+        android:layout_height="133dp"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/sulton1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubah Foto"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewNIM"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nim"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNIM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextNIM"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNIM"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:fontFamily="@font/poppins"
+        android:hint="@string/nim"
+        android:inputType="textCapWords"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/nama"
+        android:layout_below="@id/editTextNIM"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:fontFamily="@font/poppins"
+        android:hint="@string/nama"
+        android:inputType="textCapWords"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewNama"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProdi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewProdi"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/prodi"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProdi"
+        android:layout_below="@id/editTextNama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextProdi"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:fontFamily="@font/poppins"
+        android:hint="@string/prodi"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewProdi"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/email"
+        android:layout_below="@id/editTextProdi"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:fontFamily="@font/poppins"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTelf"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/telefon"
+        android:layout_below="@id/editTextEmail"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTelf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTelf"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:fontFamily="@font/poppins"
+        android:hint="@string/telefon"
+        android:inputType="phone"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewTelf"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextTelf"
+        android:id="@+id/rb">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-Laki"
+        android:layout_below="@id/editTextTelf"
+        android:id="@+id/rb1"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        android:layout_below="@id/editTextTelf"
+        android:id="@+id/rb2"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/rb"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/poppins"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/rb"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/poppins"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:onClick="Kirim Data"
+        tools:ignore="OnClick,TouchTargetSizeCheck" />
+
+</RelativeLayout>
